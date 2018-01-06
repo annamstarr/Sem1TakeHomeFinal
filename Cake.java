@@ -1,20 +1,19 @@
-
 /**
  * Anna Mary Starr
  * January 2018 - Semester 1 Take Home Final
- * Part 1
+ * Part 1 - Main Class
  */
 public class Cake implements Comparable {
     // 1. Instance variables
-    private String flavor;
-    private int size;           // 3 Large, 2 Medium, 1 Small
+    private String flavor;          // C (Chocolate) or V (Vanilla)
+    private String size;            // L (Large), M (Medium), or S (Small)
     // 2. Static variable
     static int numFoods;
     
     // 3. Default Constructor & Constructor
     public Cake() {
     }
-    public Cake(String flvr, int sz) {
+    public Cake(String flvr, String sz) {
         this.flavor = flvr;
         this.size = sz;
     }
@@ -23,13 +22,13 @@ public class Cake implements Comparable {
     public void setFlavor(String newFlavor){
         this.flavor = newFlavor;
     }
-    public void setSize(int newSize){
+    public void setSize(String newSize){
         this.size = newSize;
     }
     public String getFlavor() {
         return this.flavor;
     }
-    public int getSize() {
+    public String getSize() {
         return this.size;
     }
     
@@ -44,15 +43,16 @@ public class Cake implements Comparable {
     }
     
     // 7. Compares sizes of two cakes
-    public int compareTo(Cake other) {
-        if(this.size > other.size) {
-            return 1;
+    public String compareTo(Cake other) {
+        int result = this.size.compareTo(other.size);
+        if(result > 0) {
+            return "The first cake is larger than the second.";
         }
-        else if(this.size < other.size) {
-            return -1;
+        else if(result < 0) {
+            return "The second cake is larger than the first";
         }
         else {
-            return 0;
+            return "The cakes are the same size.";
         }
     }
 }
