@@ -4,7 +4,8 @@
  * Part 2 - Driver
  */
 public class Baker {
-    public Baker() {
-        
+    public static void main(String[] args) {
+        Cake c1 = new Cake("Chocolate", "L");
+        Cake c2 = new Cake("Vanilla", "S");
     }
 }
