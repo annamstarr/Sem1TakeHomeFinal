@@ -4,10 +4,10 @@
  * January 2018 - Semester 1 Take Home Final
  * Part 1
  */
-public class Cake implements Comparable {
+public class Cake implements Comparable<Cake> {
     // 1. Instance variables
     private String flavor;          // C (Chocolate) or V (Vanilla)
-    private int size;           // 3 (Large), 2 (Medium), or 1 (Small)
+    private int size;               // 3 (Large), 2 (Medium), or 1 (Small)
     // 2. Static variable
     static int numFoods;
     
@@ -33,9 +33,9 @@ public class Cake implements Comparable {
         return this.size;
     }
     
-    // 5. An Additional Method -- creates another cake
-    public void bake(Cake other) {
-        Cake temp = new Cake(other.flavor, other.size);
+    // 5. An Additional Method -- counts how many cakes
+    public void hmm() {
+        
     }
     
     // 6. A toString() Method
@@ -46,13 +46,13 @@ public class Cake implements Comparable {
     // 7. Compares sizes of two cakes
     public int compareTo(Cake other) {
         if(this.size > other.size) {
-            return 1;
+            return 1;                            // this.cake is laarger than other.cake
         }
         else if(this.size < other.size) {
-            return -1;                    // other.cake is larger than this.cake
+            return -1;                           // other.cake is larger than this.cake
         }
         else {
-            return The cakes are the same size.";                       // the cakes are the same size
+            return 0;                            // The cakes are the same size
         }
     }
 }
