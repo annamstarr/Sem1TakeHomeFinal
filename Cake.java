@@ -6,10 +6,10 @@
  */
 public class Cake implements Comparable<Cake> {
     // 1. Instance variables
-    private String flavor;          // C (Chocolate) or V (Vanilla)
+    private String flavor;          // Chocolate or Vanilla
     private int size;               // 3 (Large), 2 (Medium), or 1 (Small)
     // 2. Static variable
-    static int numFoods;
+    static int numCakes;
     
     // 3. Default Constructor & Constructor
     public Cake() {
@@ -17,6 +17,7 @@ public class Cake implements Comparable<Cake> {
     public Cake(String flvr, int sz) {
         this.flavor = flvr;
         this.size = sz;
+        numCakes++;
     }
     
     // 4. Setters and Getters
@@ -33,14 +34,14 @@ public class Cake implements Comparable<Cake> {
         return this.size;
     }
     
-    // 5. An Additional Method -- counts how many cakes
-    public void hmm() {
-        
+    // 5. An Additional Method -- makes another cake
+    public void bake(Cake other) {
+        Cake c = new Cake(other.flavor, other.size);
     }
     
     // 6. A toString() Method
     public String toString() {
-        return "The flavor of cake is " + this.flavor;
+        return "The flavor of cake is " + this.flavor + " and it is size " + this.size;
     }
     
     // 7. Compares sizes of two cakes
