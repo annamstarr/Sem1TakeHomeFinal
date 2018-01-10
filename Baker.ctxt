@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Baker
+comment0.text=\r\n\ Anna\ Mary\ Starr\r\n\ January\ 2018\ -\ Semester\ 1\ Take\ Home\ Final\r\n\ Part\ 3\r\n
+comment1.params=type\ nm
+comment1.target=Baker(Cake,\ java.lang.String)
+comment2.params=newCakeType
+comment2.target=void\ setCakeType(Cake)
+comment3.params=newName
+comment3.target=void\ setName(java.lang.String)
+comment4.params=
+comment4.target=Cake\ getCakeType()
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
