@@ -47,7 +47,7 @@ public class Cake implements Comparable<Cake> {
     // 7. Compares sizes of two cakes
     public int compareTo(Cake other) {
         if(this.size > other.size) {
-            return 1;                            // this.cake is laarger than other.cake
+            return 1;                            // this.cake is larger than other.cake
         }
         else if(this.size < other.size) {
             return -1;                           // other.cake is larger than this.cake
