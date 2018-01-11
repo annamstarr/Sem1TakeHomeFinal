@@ -39,7 +39,7 @@ public class Baker implements Comparable<Baker> {
     
     //4. toString() method
     public String toString() {
-        return "The baker of " + this.cakeType + " cakes is " + this.name + " who is " + this.age + " years old.";
+        return "The baker of " + this.cakeType + " is " + this.name + " who is " + this.age + " years old.";
     }
     
     // 5. Compares two Bakers' ages
