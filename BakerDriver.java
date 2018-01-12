@@ -11,8 +11,8 @@ public class BakerDriver {
         Baker baker1 = new Baker(cake1, "Sarah", 23);
         Baker baker2 = new Baker(cake1, "Kate", 31);
         
-        System.out.println(baker1.compareTo(baker2));
+        System.out.println(baker1.compareTo(baker2));      // Will print: -1
         
-        System.out.println(baker1);
+        System.out.println(baker1);     // Will print: The baker of the Chocolate cake that is size 3 is Sarah who is 23 years old.
     }
 }
