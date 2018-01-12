@@ -41,7 +41,7 @@ public class Cake implements Comparable<Cake> {
     
     // 6. A toString() Method
     public String toString() {
-        return " the " + this.flavor + " cake that is size " + this.size;
+        return "the " + this.flavor + " cake that is size " + this.size;
     }
     
     // 7. Compares sizes of two cakes

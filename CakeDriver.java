@@ -11,12 +11,12 @@ public class CakeDriver {
         Cake c2 = new Cake("Vanilla", 1);
         
         // 3. and 4.
-        System.out.println("Number of cakes: " + Cake.numCakes);
-        System.out.println(c1);     // Will print: The flavor of cake is Chocolate and it is size 3
-        System.out.println(c2);     // Will print: The flavor of cake is Vanilla and it is size 1
+        System.out.println("Number of cakes: " + Cake.numCakes);    // Will print: Number of cakes: 2
+        System.out.println(c1);     // Will print: the Chocolate cake that is size 3
+        System.out.println(c2);     // Will print: the Vanilla cake that is size 1
         changeIt(c1, c2);
-        System.out.println(c1);     // Will print: The flavor of cake is Vanilla and it is size 3
-        System.out.println(c2);     // Will print: The flavor of cake is Vanilla and it is size 1
+        System.out.println(c1);     // Will print: the Vanilla cake that is size 3
+        System.out.println(c2);     // Will print: the Vanilla cake that is size 1
     }
     
     // 2. Static method changeIt()
@@ -25,7 +25,7 @@ public class CakeDriver {
         Cake ck3 = new Cake("Chocolate", 2);
         ck2 = ck3;
         ck2.setSize(3);
-        System.out.println(ck1);     // Will print: The flavor of cake is Vanilla and it is size 3
-        System.out.println(ck2);     // Will print: The flavor of cake is Chocolate and it is size 3
+        System.out.println(ck1);     // Will print: the Vanilla cake that is size 3
+        System.out.println(ck2);     // Will print: the Chocolate cake that is size 3
     }
 }
